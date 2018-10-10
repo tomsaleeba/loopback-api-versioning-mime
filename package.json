@@ -1,0 +1,36 @@
+{
+  "name": "loopback-api-versioning-mime",
+  "version": "0.1.0",
+  "description": "Express middleware that helps you version your Loopback.io API using the x-version HTTP header",
+  "keywords": [
+    "loopback",
+    "express",
+    "API version",
+    "mime"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5",
+    "should": "^13.2.1",
+    "should-http": "^0.1.1",
+    "standard": "^12.0.1"
+  },
+  "scripts": {
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "test:watch": "./node_modules/.bin/nodemon --exec 'npm run custom-tests || exit 1'",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "custom-tests": "mocha -R spec"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tomsaleeba/loopback-api-versioning-mime.git"
+  },
+  "author": "Tom Saleeba",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.10"
+  }
+}
