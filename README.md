@@ -1,5 +1,9 @@
 > A helper for Loopback that enables API versioning via the HTTP x-version header
 
+## Demo
+
+See the `demo/` directory for a working demo of this helper in action. There is a [README](./demo/README.md) with more details.
+
 ## How to use this hook
 
  1. install the hook into your project
